@@ -2,8 +2,8 @@ let lotes = [50, 40, 60, 30, 70];
 
 let totalIngressos = 0;
 
-for (let i=0; i<=lotes.length; i++){  
-  totalIngressos = totalIngressos+ lotes[i];
+for (let i=0; i<lotes.length; i++){  
+  totalIngressos += lotes[i];
 }
 console.log(`O total de ingressos foi: ${totalIngressos}`);
 
