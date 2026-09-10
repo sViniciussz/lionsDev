@@ -1,17 +1,21 @@
 import PromptSync from "prompt-sync";
 const teclado = PromptSync();
 
-function bonusRh(nivelCargo, salarioAtual){
+function bonusRh(nivelCargo, salarioAtual) {
   let bonus;
-  if(nivelCargo === "Estagiario"){
-    bonus = salarioAtual * 0.10;
-    
-  } else if(nivelCargo === "Junior"){
-    bonus = salarioAtual * 0.15;
-    
-  } else if(nivelCargo === "Pleno"){
-    bonus = salarioAtual * 0.20;
-    
+
+  switch (nivelCargo) {
+    case "Estagiario":
+      bonus = salarioAtual * 0.10;
+      break;
+    case "Junior":
+      bonus = salarioAtual * 0.15;
+      break;
+    case "Pleno":
+      bonus = salarioAtual * 0.20;
+      break;
+    default:
+      bonus = 0;
   }
 
   return bonus;
