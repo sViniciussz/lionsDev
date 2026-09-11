@@ -1,8 +1,8 @@
 import PromptSync from "prompt-sync";
 const teclado = PromptSync();
 
-const registro ={
-  nome: "ceasar"
+const registro = {
+  nome: "cesar"
 };
 
 let produto = parseInt(teclado("Informe o produto da compra [1-Fone 2-Teclado 3-Mouse]: "));
@@ -13,7 +13,7 @@ switch (produto) {
     registro.produto = "Fone";
     registro.valor = 50.00;
     break;
-  
+
   case 2:
     console.log("Teclado adicionado ao carrinho");
     registro.produto = "teclado";

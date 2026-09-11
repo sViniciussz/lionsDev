@@ -2,13 +2,14 @@ import PromptSync from "prompt-sync";
 const teclado = PromptSync();
 
 const validacao = (nome, codigo) => {
-  const letras = nome.split("");
-  if (letras.length > 4 && codigo > 1000) {
-    return true;
 
-  } else {
-    return false;
+  switch (true) {
+    case (nome.length > 5 && codigo > 1000):
+      return true;
+      break;
   }
+
+  return false;
 
 }
 
