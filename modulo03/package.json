@@ -1,9 +1,6 @@
 {
   "type": "module",
-  "dependencies": {
-    "prompt-sync": "^4.2.0"
-  },
-  "name": "lionsdev",
+  "name": "modulo03",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,5 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
