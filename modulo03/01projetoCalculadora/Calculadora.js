@@ -28,10 +28,10 @@ function menu(){
     console.log("1- Adicao\n2- Subtracao\n3- Multiplicacao\n4- Divisao\n5- Porcentagem\n6- Exibir resultado atual\n0- Sair!");
     opcao = parseInt(teclado(":"));
 
-    // if (isNaN(opcao)) {
-    //           console.log("Erro: Informe uma opcao valida.");
-    //           continue;
-    //       }
+    if (isNaN(opcao)) {
+              console.log("Erro: Informe uma opcao valida.");
+              continue;
+          }
 
     let num1;
     let num2;
