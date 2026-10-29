@@ -1,7 +1,7 @@
 function adicionarContato(contatos, novoContato) {
   let emailExiste = false;
 
-  for (i = 0; i < contatos.legth; i++) {
+  for (let i = 0; i < contatos.legth; i++) {
     if (contatos[i].email === novoContato.email) {
       emailExiste = true;
       break;
@@ -12,6 +12,8 @@ function adicionarContato(contatos, novoContato) {
     console.log("ERRO: email ja existe no sistema");
     return false;
   }
+
+  novoContato.id = 1; 
 
   if (contatos.length > 0) {
     let ultimoContato = contatos[contatos.length - 1];

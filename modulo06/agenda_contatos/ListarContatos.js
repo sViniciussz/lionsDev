@@ -9,12 +9,10 @@ function listarContatos(contatos) {
         console.log("Id: " + contato.id);
         console.log("Nome: " + contato.nome);
         console.log("Email: " + contato.email);
-        console.log("================================");
         
-        // Loop para listar cada telefone individualmente com seu respectivo número de ordem
-        for (let i = 0; i < contato.telefones.length; i++) {
-            console.log(`Telefone ${i + 1}: ${contato.telefones[i]}`);
-        }
+        console.log(contato.telefones.map((tel, i) => `Telefone ${i + 1}: ${tel}`).join('\n'));
+
+        console.log("================================\n");
     });
 }
 

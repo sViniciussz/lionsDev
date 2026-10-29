@@ -5,7 +5,7 @@ function removerContato(contatos, id) {
     console.log("Erro: Cadastro nao encontrado");
     return false;
   } else {
-    contatos.splice(indice, 1);
+    contatos.splice(INDICE, 1);
     console.log("Contato removido com sucesso!");
     return true;
   }
